@@ -2,15 +2,14 @@ const model = {
     numberOfFotos: 79,
     fotosData: [],
     init: function() {
-        let withJpg = this.addJpg(this.fotosData);
-        this.fotosData = withJpg;
+        this.fotosData = this.addJpg();
     },
-    addJpg: function(data) {
-        for (i = 0; i < model.numberOfFotos; i++) {
-            let fotoNum = i+1
+    addJpg: function() {
+        let data = [];
+        for (i = 0; i < this.numberOfFotos; i++) {
+            let fotoNum = i+1; // +1 so it will start from Pic_(1).jpg
             fotoNum = fotoNum.toString();
-            let foto = "Pic (" + fotoNum + ").jpg";
-            data[i] = foto;
+            data[i] = "Elad_(" + fotoNum + ").jpg";
         }
         return data;
     }
@@ -22,7 +21,7 @@ const vm = {
         this.fotoCount = 0
         model.init();
         view.init();
-        console.log(model.fotosData);
+        console.log(model.fotosData); // prints the randomize pic deck
         this.buildBingo();
     },
     shuffleBingo: function(array) {
