@@ -23,6 +23,6 @@
 
 #use:
 1. load the folder `img` with images
-2. Rename images to `Pic (1).jpg`, `Pic (2).jpg` etc
+2. Rename images to `Pic_(1).jpg`, `Pic_(2).jpg` etc
 3. make sure `.jpg` is in small letters
 5. open `bingo.html`
