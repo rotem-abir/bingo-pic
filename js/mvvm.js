@@ -1,5 +1,5 @@
 const model = {
-    numberOfFotos: 79,
+    numberOfFotos: 10, // number of pictures to roll from the 'img' folder
     fotosData: [],
     init: function() {
         this.fotosData = this.addJpg();
@@ -9,7 +9,7 @@ const model = {
         for (i = 0; i < this.numberOfFotos; i++) {
             let fotoNum = i+1; // +1 so it will start from Pic_(1).jpg
             fotoNum = fotoNum.toString();
-            data[i] = "Elad_(" + fotoNum + ").jpg";
+            data[i] = "Pic_(" + fotoNum + ").jpg"; // naming convention is subject to changes with referal to line 69
         }
         return data;
     }
@@ -66,7 +66,7 @@ const view = {
             this.image.src= `img/${model.fotosData[i]}`
             vm.fotoCount++;
             this.fotoNum.innerHTML =
-            "pic " + model.fotosData[i].slice(5, 9) + " / round: " + vm.fotoCount;
+            "pic " + model.fotosData[i].slice(4, 8) + " / round: " + vm.fotoCount; // if pictures prefix is longer than 3 letters (atm "pic"), change here to 5,9 etc
         }
     }
 }
