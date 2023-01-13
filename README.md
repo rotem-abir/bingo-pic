@@ -1,10 +1,10 @@
-# bingo-pic
+#bingo-pic
 - image based bingo game
 - mvvm
 
 ---
 
-#current features:
+##current features:
 - randomize folder of images
 - scroll images by click
 - show current round number
@@ -12,7 +12,7 @@
 - partly responsive
 - current version is for desktop use
 
-#future features:
+##future features:
 - fully responsive
 - load images with JSON
 - load images from any folder
@@ -21,7 +21,7 @@
 
 ---
 
-#use:
+##use:
 1. load the folder `img` with images
 2. Rename images to `Pic_(1).jpg`, `Pic_(2).jpg` etc
 3. make sure `.jpg` is in small letters
