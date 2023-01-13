@@ -28,5 +28,5 @@
 
 1. load the folder `img` with images
 2. Rename images to `Pic_(1).jpg`, `Pic_(2).jpg` etc
-3. make sure `.jpg` is in small letters
+3. make sure the files extension is `.jpg` (no caps, no 'jpeg')
 5. open `bingo.html`
