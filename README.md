@@ -1,4 +1,4 @@
-#bingo-pic
+#Bingo-pic
 
 - image based bingo game
 - mvvm
